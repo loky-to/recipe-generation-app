@@ -1,7 +1,7 @@
 import '@/Css/recipe-header.scss'
 import Image from 'next/image'
 import BaseHeader from '@/SharedComponents/BaseHeader'
-import robotImg from '../images/chef-claude-icon.png'
+import robotImg from '../images/robotChef.png'
 
 export default function RecipeHeader() {
     return(

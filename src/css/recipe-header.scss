@@ -1,7 +1,11 @@
 .recipe-header {
+    span {
+        line-height: normal;
+    }
+    
     &__image {
-        width: 2.69rem;
+        width: 3.25rem;
         height: 3.25rem;
-        margin-right: 0.69rem;
+        margin-right: 0.4rem;
     }
 }

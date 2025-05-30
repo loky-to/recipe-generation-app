@@ -53,6 +53,9 @@ function RecipeContent() {
 
     return(
         <main className="recipe-content">
+            <div className="recipe-content__header">
+                <h1>✨ AI-Powered Recipe Generator</h1>
+            </div>
             <BaseForm
                 type="text"
                 name="ingredient"
@@ -70,6 +73,16 @@ function RecipeContent() {
                 }}
                 errorMessage={error}
             />
+            {
+                ingredients.length === 0 &&
+                <div className="recipe-content__empty">
+                    <h1>🥕 Got random ingredients in your fridge?</h1>
+                    <span>
+                        We'll turn them into a delicious recipe!<br />
+                        Just enter what you have, and let AI cook up something amazing.
+                    </span>
+                </div>
+            }
             {
                 ingredients.length > 0 && 
                 <div className="recipe-content__ingredients">
