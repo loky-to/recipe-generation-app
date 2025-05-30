@@ -46,7 +46,6 @@ function RecipeContent() {
 
     function getRecipe() {
         dispatch(fetchRecipe(ingredients))
-        console.log('getting recipe')
     }
 
     const showRecipe = recipe && recipe.ingredients.length > 0 && recipe.steps.length

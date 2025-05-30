@@ -39,8 +39,6 @@ export async function POST(request) {
     } 
 
     const recipeText = completion.choices[0].message.content;
-    console.log('-----------------recipe text---------------------')
-    console.log(recipeText)
     const parsedRecipe = parseRecipeText(recipeText);
 
     return NextResponse.json(parsedRecipe);
