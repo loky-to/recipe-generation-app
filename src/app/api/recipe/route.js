@@ -2,11 +2,6 @@ import { parseRecipeText } from '@/utils/parseRecipeText';
 import { NextResponse } from 'next/server';
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
-
 export async function POST(request) {
   try {
     const { inputs } = await request.json();
@@ -14,10 +9,14 @@ export async function POST(request) {
     if (!inputs || typeof inputs !== "string") {
       return new Response(JSON.stringify({ error: "Invalid inputs" }), { status: 400 });
     }
-
+    
     if (!process.env.OPENAI_API_KEY) {
       return new Response(JSON.stringify({ error: "OPENAI_API_KEY not set" }), { status: 500 });
     }
+    
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const completion = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',
