@@ -150,8 +150,16 @@
     }
     
     &__get-recipe-lhs {
-        display: column;
         padding: 0;
+
+        @media (max-width: 499px) {
+            width: 100%;
+        }
+        
+        @media (min-width: 500px) {
+            display: column;
+            margin-top: 2rem;
+        }
 
         h2 {
             font-weight: 500;
