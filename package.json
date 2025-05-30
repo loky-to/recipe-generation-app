@@ -6,8 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
+  "homepage": "https://loky-to.github.io/recipe-generation-app",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "lottie-react": "^2.4.1",
@@ -21,6 +25,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2"
+    "eslint-config-next": "15.3.2",
+    "gh-pages": "^6.3.0"
   }
 }
