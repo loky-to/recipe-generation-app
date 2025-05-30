@@ -1,0 +1,159 @@
+// React colours
+$react-primary: #61dbfb;
+$default-font-color: #141413;
+$color-grey: #475467;
+$color-light-grey: #6B7280;
+$default-border-color: #D1D5DB;
+$color-background-grey: #FAFAF8;
+$color-salmon: #D17557;
+
+// Primary
+$color-primary-light-80: #e0d3f4;
+$color-primary-light-70: #d1bdef;
+$color-primary-light-60: #c1a7e9;
+$color-primary-light-50: #b291e4;
+$color-primary-light-40: #a27bdf;
+$color-primary-light-30: #9365d9;
+$color-primary-light-20: #834fd4;
+$color-primary-light-10: #7439ce;
+$color-primary: #6423c9;
+$color-primary-dark-10: #5a20b5;
+$color-primary-dark-20: #501ca1;
+$color-primary-dark-30: #46198d;
+$color-primary-dark-40: #3c1579;
+$color-primary-dark-50: #321265;
+$color-primary-dark-60: #280e50;
+$color-primary-dark-70: #1e0a3c;
+$color-primary-dark-80: #140728;
+$color-primary-dark-90: #0a0314;
+
+// Purple
+$color-purple-light-90: #f2e8fe;
+$color-purple-light-80: #e4d1fd;
+$color-purple-light-70: #d7bbfb;
+$color-purple-light-60: #c9a4fa;
+$color-purple-light-50: #bc8df9;
+$color-purple-light-40: #af76f8;
+$color-purple-light-30: #a15ff7;
+$color-purple-light-20: #9449f5;
+$color-purple-light-10: #8632f4;
+$color-purple: #791bf3;
+$color-purple-dark-10: #6d18db;
+$color-purple-dark-20: #6116c2;
+$color-purple-dark-30: #5513aa;
+$color-purple-dark-40: #491092;
+$color-purple-dark-50: #3d0e7a;
+$color-purple-dark-60: #300b61;
+$color-purple-dark-70: #240849;
+$color-purple-dark-80: #180531;
+$color-purple-dark-90: #0c0318;
+
+// Blue
+$color-blue: #0075ff;
+
+// Yellow
+$color-yellow-dark-50: #805c00;
+$color-yellow-dark-40: #996e00;
+$color-yellow-dark-30: #b38000;
+$color-yellow-dark-20: #cc9200;
+$color-yellow-dark-10: #e6a500;
+$color-yellow: #ffb700;
+$color-yellow-light-10: #ffbe1a;
+$color-yellow-light-20: #ffc533;
+$color-yellow-light-30: #ffcd4d;
+$color-yellow-light-40: #ffd466;
+$color-yellow-light-50: #ffdb80;
+
+// Orange
+$color-orange-dark-50: #80360c;
+$color-orange-dark-40: #99400e;
+$color-orange-dark-30: #b34b10;
+$color-orange-dark-20: #cc5612;
+$color-orange-dark-10: #e66015;
+$color-orange: #ff6b17;
+$color-orange-light-10: #ff7a2e;
+$color-orange-light-20: #ff8945;
+$color-orange-light-30: #ff975d;
+$color-orange-light-40: #ffa674;
+$color-orange-light-50: #ffb58b;
+$color-orange-light-60: #ffc4a2;
+$color-orange-light-70: #ffd3b9;
+$color-orange-light-80: #ffe1d1;
+$color-orange-light-90: #fff0e8;
+
+// Red
+$color-red-dark-50: #801717;
+$color-red-dark-40: #991c1c;
+$color-red-dark-30: #b32020;
+$color-red-dark-20: #cc2525;
+$color-red-dark-10: #e62929;
+$color-red: #ff2e2e;
+$color-red-light-10: #ff4343;
+$color-red-light-20: #ff5858;
+$color-red-light-30: #ff6d6d;
+$color-red-light-40: #ff8282;
+$color-red-light-50: #ff9797;
+
+// Green
+$color-green-dark-60: #094722;
+$color-green-dark-50: #0b592b;
+$color-green-dark-40: #0d6b33;
+$color-green-dark-30: #0f7d3b;
+$color-green-dark-20: #128e44;
+$color-green-dark-10: #14a04d;
+$color-green: #16b255;
+$color-green-light-10: #2dba66;
+$color-green-light-20: #45c177;
+$color-green-light-30: #5cc988;
+$color-green-light-40: #73d199;
+$color-green-light-50: #8bd9aa;
+$color-green-light-60: #a2e0bb;
+$color-green-light-70: #b9e8cc;
+$color-green-light-80: #d0f0dd;
+$color-green-light-90: #e8f7ee;
+
+// Status
+$color-declined: $color-red;
+$color-complete: $color-green;
+$color-creating: $color-yellow;
+$color-offer: $color-blue;
+$color-invited: $color-orange;
+$color-interested: $color-purple;
+
+// Overlay
+$color-overlay-dark: #4154a1b8; // rgba(65, 84, 161, 72%)
+$color-overlay-light: #a7b9cfb8; // rgba(167, 185, 207, 72%)
+
+// Label
+$color-label-light-1: #080c1e;
+$color-label-light-2: #5c7089;
+$color-label-light-3: #a7b9cf;
+$color-label-light-4: #ccd3dd;
+$color-label-dark-1: #fff;
+$color-label-dark-2: #c9badc;
+$color-label-dark-3: #6c5886;
+$color-label-dark-4: #45315e;
+
+// Surface
+$color-surface-light-0: #fff;
+$color-surface-light-1: #f0f0f0;
+$color-surface-light-2: #f5f5f5;
+$color-surface-light-3: #ececec;
+$color-surface-light-4: #ececec;
+$color-surface-light-5: #dfdfdf;
+$color-surface-light-6: #d0d0d0;
+$color-surface-dark-0: #140728;
+$color-surface-dark-1: #210f3e;
+$color-surface-dark-2: #2c1b45;
+$color-surface-dark-3: #372353;
+$color-surface-dark-4: #513774;
+$color-surface-dark-5: #64478b;
+$color-surface-dark-6: #8863bd;
+
+// Status
+$color-status-added: #ff7222;
+$color-status-interested: #9100ae;
+$color-status-offer: #0075ff;
+$color-status-creating: #ff467b;
+$color-status-complete: #1bb255;
+$color-status-declined: #513774;

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/SharedComponents*": ["./src/shared-components/*"],
+      "@/SharedComponentCss*": ["./src/shared-scss/components/*"],
+      "@/SharedCss*": ["./src/shared-scss/*"],
+      "@/Css*": ["./src/css/*"],
     }
   }
 }

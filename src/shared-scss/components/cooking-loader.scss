@@ -1,0 +1,19 @@
+@use '@/SharedCss/_colours.scss' as *;
+
+.cooking-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__loader {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    p {
+        font-size: 1.13rem;
+        line-height: 1.75rem;
+        color: $color-grey;
+    }
+}

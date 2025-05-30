@@ -1,0 +1,18 @@
+@use '@/SharedCss/_colours.scss' as *;
+
+.base-form {
+    height: auto;
+
+    input {
+        border-radius: 6px;
+        border: 1px solid $default-border-color;
+        padding: 0.56rem 0.81rem;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &__error-message {
+        padding-left: 0.25rem;
+        font-size: 0.75rem;
+        color: $color-red-dark-20;
+    }
+}

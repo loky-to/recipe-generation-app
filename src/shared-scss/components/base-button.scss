@@ -1,0 +1,52 @@
+@use '@/SharedCss/_colours.scss' as *;
+
+.base-button {
+    font-family: Inter;
+    border: none;
+
+    &.-default {
+        border-radius: 6px;
+        background-color: $default-font-color;
+        color: $color-background-grey;
+        padding: 0.56rem 1.06rem;
+        // width: 11.44rem;
+        font-size: 0.88rem;
+        font-weight: 500;
+    }
+
+    &.-size-38 {
+        height: 2.38rem;
+        padding: 0.56rem 1.06rem;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 0.88rem;
+        line-height: 1.25rem;
+    }
+
+    &.-salmon {
+        background-color: $color-salmon;
+        color: $color-background-grey;
+    }
+
+    &.-delete-tag {
+        background-color: $color-label-light-4;
+        color: $color-grey;
+        height: 1.9rem;
+        padding: 0.2rem 0.75rem;
+        width: fit-content;
+        border: 1px solid $color-label-light-3;
+        border-radius: 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.38rem;
+        font-size: 1rem;
+    }
+    
+    img {
+        height: 0.6rem;
+        width: 0.6rem;
+        fill: $color-grey;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

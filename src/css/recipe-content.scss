@@ -1,0 +1,197 @@
+@use '@/SharedCss/_colours.scss' as *;
+
+.recipe-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @media (min-width: 500px) {
+        padding: 1rem 2rem;
+    }
+
+    @media (min-width: 767px) {
+        padding: 2rem 4rem 1rem;
+    }
+
+    @media (min-width: 850px) {
+        min-width: 750px;
+    }
+
+    form {
+        height: 4.86rem;
+
+        @media (min-width: 500px) {
+            flex-direction: row;
+            height: 2.38rem;
+        }
+    }
+
+    .base-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @media (min-width: 500px) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input {
+            // width: 100%;
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+        
+        .base-button {
+            flex-shrink: 0;
+            width: 100%;
+            
+            &::before {
+                content: "+";
+                margin-right: 0.31rem;
+            }
+
+            @media (min-width: 500px) {
+                width: auto;
+                max-width: 10rem;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+
+    &__ingredients, &__recipe {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        text-align: left;
+        width: 100%;
+        
+        h1 {
+            font-weight: 600;
+            font-size: 1.88rem;
+            color: $default-font-color;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 499px) {
+                font-size: 1.5rem;
+            }
+        }        
+    }
+    
+    &__ingredients-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        row-gap: 0.5rem;
+        max-height: 22.88rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        @media (max-height: 740px) {
+            max-height: 15rem;
+        }
+
+        @media (max-width: 499px) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        @media (min-width: 500px) {
+            grid-template-columns: repeat(3, 1fr);            
+        }
+
+        @media (min-width: 680px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+    &__get-recipe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 6.81rem;
+        padding: 1.75rem 2.63rem;
+        background-color: #F0EFEB;
+        border-radius: 8px;
+
+        @media (max-width: 499px) {
+            flex-direction: column;
+            padding: 1rem;
+            height: auto;
+
+            .base-button {
+                margin-top: 0.5rem;
+                width: 100%;
+            }
+        }
+    }
+    
+    &__get-recipe-lhs {
+        display: column;
+        padding: 0;
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.13rem;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: $default-font-color;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 0.88rem;
+            line-height: 1.25rem;
+            color: $color-light-grey;
+        }
+    }
+
+    &__recipe {
+        span {
+            font-size: 1.13rem;
+            line-height: 1.75rem;
+            color: $color-grey;
+        }
+        
+        h3 {
+            font-weight: 700;
+            font-size: 1.13rem;
+            line-height: 1.75rem;
+            color: $color-grey;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__recipe-ingredients-list, &__recipe-instructions {
+        margin-top: 1.5rem;
+        ul,ol {
+            margin-left: 1.3rem;
+        }
+        li {
+            font-size: 1.13rem;
+            line-height: 1.75rem;
+            color: $color-grey;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    &__recipe-NA {
+        padding: 1rem;
+        font-size: 1.13rem;
+        line-height: 1.75rem;
+        color: $color-grey;
+    }
+
+    .cooking-loader {
+        @media (min-width: 500px) {
+            margin-top: 2rem;
+        }
+    }
+}
