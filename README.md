@@ -1,12 +1,12 @@
-# 🧑‍🍳 Recipe Generator App
+# **🧑‍🍳 Recipe Generator App**
 
 A sleek, modern recipe generator built with **React**, **Next.js**, and **Redux**. Simply input your available ingredients, and the app will generate a recipe using **OpenAI's GPT-3.5-turbo**.
 
-Originally inspired by the [Scrimba "Learn React" course design](https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=1-972&t=M9ROhLPrUkRdf4Qn-0), this version improves upon the foundation with a better user experience, expanded functionality, and AI integration upgrades.
+Originally inspired by the Scrimba's "Learn React" course  [Figma design](https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=1-972&t=M9ROhLPrUkRdf4Qn-0), this version improves upon the foundation with a better user experience, expanded functionality, and AI integration upgrades.
 
 ---
 
-## 🔧 Features
+## **🔧 Features**
 
 - Add and remove ingredients dynamically
 - Generate recipes using OpenAI (GPT-3.5-turbo)
@@ -17,7 +17,7 @@ Originally inspired by the [Scrimba "Learn React" course design](https://www.fig
 
 ---
 
-## ✨ Enhancements Beyond the Original Design
+## **✨ Enhancements Beyond the Original Design**
 
 This project was originally based on a Scrimba course design, but includes the following key improvements:
 
@@ -41,7 +41,7 @@ This project was originally based on a Scrimba course design, but includes the f
 
 ---
 
-## 🛠 Tech Stack
+## **🛠 Tech Stack**
 
 - **React 19**
 - **Next.js 15**
@@ -51,24 +51,24 @@ This project was originally based on a Scrimba course design, but includes the f
 
 ---
 
-## 🚀 Getting Started
+## **🚀 Getting Started**
 
 To run the project locally:
 
-### 1. Clone the repository
+### 1. **Clone the repository**
 
 ```bash
 git clone https://github.com/loky-to/recipe-generation-app.git
 cd recipe-generator
 ```
 
-### 2. Install dependencies
+### 2. **Install dependencies**
 
 ```bash
 yarn install
 ```
 
-### 3. Run the development server
+### 3. **Run the development server**
 
 ```bash
 yarn dev
@@ -78,7 +78,7 @@ The app will be available at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🎨 Design Credit
+## **🎨 Design Credit**
 
 This app is based on the **Chef Claude** UI from Scrimba’s [Learn React](https://scrimba.com/learn-react-c0e) course.  
 👉 [Original Figma design by Scrimba](https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=1-972&t=M9ROhLPrUkRdf4Qn-0)
