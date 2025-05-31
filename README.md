@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍🍳 Recipe Generator App
 
-## Getting Started
+A sleek, modern recipe generator built with **React**, **Next.js**, and **Redux**. Simply input your available ingredients, and the app will generate a recipe using **OpenAI's GPT-3.5-turbo**.
 
-First, run the development server:
+Originally inspired by the [Scrimba "Learn React" course design](https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=1-972&t=M9ROhLPrUkRdf4Qn-0), this version improves upon the foundation with a better user experience, expanded functionality, and AI integration upgrades.
+
+---
+
+## 🔧 Features
+
+- Add and remove ingredients dynamically
+- Generate recipes using OpenAI (GPT-3.5-turbo)
+- Input validation: prevents duplicate (case sensitive) and cleans emojis from input
+- Real-time animated loader with Lottie for better user feedback
+- Clean and responsive UI based on Scrimba's design
+- State management using Redux for scalable architecture
+
+---
+
+## ✨ Enhancements Beyond the Original Design
+
+This project was originally based on a Scrimba course design, but includes the following key improvements:
+
+- **Contextual Introduction Text**  
+  Users landing on the app now see an explanation of what the app does — a key UX detail missing from the original design.
+
+- **Ingredient Removal Functionality**  
+  Unlike the original, users can now remove ingredients without needing to refresh the page — avoiding frustration from accidental inputs.
+
+- **State Management with Redux**  
+  Replaced local `useState` with a Redux store for global state handling. This allowed:
+  - Prevent duplicate ingredients (case-sensitive)
+  - Sanitize input by stripping emojis
+  - More scalable app architecture
+
+- **AI Integration Upgraded to OpenAI**  
+  The original design used Claude AI. I initially explored Hugging Face models, but due to deployment limitations, I opted for **OpenAI's GPT-3.5-turbo** for reliable and flexible generation.
+
+- **Animated Loader for Feedback**  
+  Integrated a Lottie animation to show users that a recipe is being generated. The original design had no visual loading indicator, which could leave users confused during longer waits.
+
+---
+
+## 🛠 Tech Stack
+
+- **React 19**
+- **Next.js 15**
+- **Redux Toolkit**
+- **SCSS**
+- **OpenAI API**
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/loky-to/recipe-generation-app.git
+cd recipe-generator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Run the development server
 
-## Learn More
+```bash
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The app will be available at: [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design Credit
 
-## Deploy on Vercel
+This app is based on the **Chef Claude** UI from Scrimba’s [Learn React](https://scrimba.com/learn-react-c0e) course.  
+👉 [Original Figma design by Scrimba](https://www.figma.com/design/73iyU720zWmrWgJsok5tYE/Chef-Claude?node-id=1-972&t=M9ROhLPrUkRdf4Qn-0)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This version adds functional enhancements and design improvements while maintaining the clean and friendly aesthetic of the original.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
