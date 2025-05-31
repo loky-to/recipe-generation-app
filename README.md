@@ -39,6 +39,8 @@ This project was originally based on a Scrimba course design, but includes the f
 - **Animated Loader for Feedback**  
   Integrated a Lottie animation to show users that a recipe is being generated. The original design had no visual loading indicator, which could leave users confused during longer waits.
 
+- **Responsive Design**  
+  Made the page fully responsive across different devices and screen sizes for improved accessibility and usability.
 ---
 
 ## **🛠 Tech Stack**
